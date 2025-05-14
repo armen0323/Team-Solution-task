@@ -14,7 +14,7 @@ This is a technical interview test app built with React and TypeScript. The goal
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/GagikTunanyan/react-practical-test.git
+git clone https://github.com/GagikTunanyan/react-practical-test.git](https://github.com/armen0323/Team-Solution-task.git
 cd react-practical-test
 npm install
 ```
@@ -22,13 +22,13 @@ npm install
 Start the development server:
 
 ```bash
-npm start
+craco start
 ```
 
 Build for production:
 
 ```bash
-npm run build
+craco build
 ```
 
 ## 🌐 Backend Integration
