@@ -1,0 +1,37 @@
+@import 'styles/mixin.scss';
+@import 'styles/vars.scss';
+@import 'styles/flex.scss';
+
+.navbar {
+  @include flex-align-between;
+  padding: 16px 32px;
+  background-color: $dark_blue;
+  color: white;
+}
+
+.logo {
+ @include font_size_l;
+  font-weight: bold;
+  text-decoration: none;
+  color: $white;
+}
+
+.navLinks {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+
+  .item{
+    cursor: pointer;
+    .link {
+      text-decoration: none;
+      color: $white;
+      font-weight: 500;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $aqua;
+      }
+    }
+  }
+}

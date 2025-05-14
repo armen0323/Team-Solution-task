@@ -1,0 +1,47 @@
+@import 'styles/mixin.scss';
+@import 'styles/vars.scss';
+@import 'styles/flex.scss';
+
+.wrapper {
+  @include flex-column-center;
+  text-align: center;
+  padding: 48px 24px;
+  height: calc(100vh - 60px);
+  background-color: $white;
+
+  .image {
+    width: 180px;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 16px;
+    color: $dark_grey;
+    max-width: 400px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $dark_blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: $light_blue;
+    }
+  }
+}

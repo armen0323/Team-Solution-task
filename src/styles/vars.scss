@@ -1,0 +1,74 @@
+@import "mixin.scss";
+
+$font_size_desktop_xs: 14px;
+$font_size_desktop_s: 16px;
+$font_size_desktop_m: 20px;
+$font_size_desktop_l: 24px;
+$font_size_desktop_lg: 30px;
+$font_size_desktop_xl: 35px;
+
+
+$font_size_mobile_xs: 10px;
+$font_size_mobile_s: 12px;
+$font_size_mobile_m: 14px;
+$font_size_mobile_l: 16px;
+$font_size_mobile_lg: 20px;
+$font_size_mobile_xl: 25px;
+
+@mixin font_size_xs {
+  font-size: $font_size_desktop_xs;
+  @include customBreakpointSize(480px) {
+    font-size: $font_size_mobile_xs;
+  }
+}
+
+@mixin font_size_s {
+  font-size: $font_size_desktop_s;
+  @include customBreakpointSize(480px) {
+    font-size: $font_size_mobile_s;
+  }
+}
+
+@mixin font_size_m {
+  font-size: $font_size_desktop_m;
+  @include customBreakpointSize(480px) {
+    font-size: $font_size_mobile_m;
+  }
+}
+
+@mixin font_size_l {
+  font-size: $font_size_desktop_l;
+  @include customBreakpointSize(480px) {
+    font-size: $font_size_mobile_l;
+  }
+}
+
+@mixin font_size_lg {
+  font-size: $font_size_desktop_lg;
+  @include customBreakpointSize(480px) {
+    font-size: $font_size_mobile_lg;
+  }
+}
+
+@mixin font_size_lg {
+  font-size: $font_size_desktop_xl;
+  @include customBreakpointSize(480px) {
+    font-size: $font_size_mobile_xl;
+  }
+}
+
+
+$blue: #4E71FF;
+$dark_blue:#1f2937;
+$light_blue: #8DD8FF;
+$aqua:#60a5fa;
+$black: #282529;
+$status_red: #e63838;
+$dark_grey: #7c7c7c;
+$grey: #c1c1c1;
+$status_green:#198754;
+$white: #fff;
+$milk:#EAE4D5;
+$avatar_border:#e5e7eb;
+$names_color:#111827;
+$medium_grey:#6b7280;

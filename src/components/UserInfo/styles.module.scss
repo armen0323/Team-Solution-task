@@ -1,0 +1,39 @@
+@import 'styles/mixin.scss';
+@import 'styles/vars.scss';
+@import 'styles/flex.scss';
+
+.wrapper {
+  @include flex-column-center;
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $avatar_border;
+    margin-bottom: 24px;
+  }
+
+  .info {
+    text-align: center;
+
+    .name {
+      @include font_size_lg;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: $names_color;
+    }
+
+    .email {
+      @include font_size_s;
+      color: $medium_grey;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      @include font_size_xs;
+      color: $medium_grey;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

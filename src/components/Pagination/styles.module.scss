@@ -1,0 +1,40 @@
+@import "styles/vars.scss";
+@import "styles/flex.scss";
+@import "styles/mixin.scss";
+
+.pagination {
+@include flex-center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+
+  &:hover:not(:disabled) {
+    background-color: $medium_grey;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.active {
+  background-color: $dark_blue;
+  color: $white;
+  font-weight: 600;
+}
+
+.ellipsis {
+  padding: 6px 10px;
+  font-size: 14px;
+  color: $names_color;
+}

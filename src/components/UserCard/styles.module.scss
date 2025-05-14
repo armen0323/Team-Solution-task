@@ -1,0 +1,50 @@
+@import 'styles/mixin.scss';
+@import 'styles/vars.scss';
+@import 'styles/flex.scss';
+
+.card {
+  width: 100%;
+  @include flex-align;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: $white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid $avatar_border;
+  }
+
+  .info {
+    @include flex-column-justify-center;
+
+    .name {
+      @include font_size_m;
+      font-weight: 600;
+      color: $names_color;
+    }
+
+    .email {
+      @include font_size_xs;
+      color: $medium_grey;
+      margin-top: 4px;
+    }
+  }
+}
+
+
+
+
+
+

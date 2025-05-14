@@ -1,0 +1,20 @@
+@import 'styles/mixin.scss';
+@import 'styles/vars.scss';
+@import 'styles/flex.scss';
+
+.userDetails {
+  @include flex-column-center;
+  padding: 32px;
+  background-color: $white;
+  min-height: calc(100dvh - 60px);
+}
+
+
+.loading {
+  height: calc(100vh - 60px);
+  @include flex-center;
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: $dark_grey;
+}

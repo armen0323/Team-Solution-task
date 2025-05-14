@@ -1,0 +1,31 @@
+@import 'styles/mixin.scss';
+@import 'styles/vars.scss';
+@import 'styles/flex.scss';
+.wrapper{
+  width: 100%;
+  padding: 32px;
+  height: calc(100dvh - 60px);
+  overflow-y: auto;
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .user{
+      width: calc(50% - 12px);
+
+      @include customBreakpointSize(768px){
+        width: 100%;
+      }
+    }
+  }
+}
+.loading {
+  height: calc(100vh - 60px);
+  @include flex-center;
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: $dark_grey;
+}

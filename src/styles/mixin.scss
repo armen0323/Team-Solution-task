@@ -1,0 +1,5 @@
+@mixin customBreakpointSize($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
